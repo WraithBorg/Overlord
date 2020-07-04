@@ -1,7 +1,7 @@
 
 module.exports = {
-	//apiHost:"http://fd175.skymvc.com/",
 	apiHost:"https://kfbc.deitui.com/",
+	zxuHost:"http://127.0.0.1:8888/star/",
 	appRoot:"https://kfbc.deitui.com/uniapp/h5/",
 	parseUrl:function(url){
 		var params = [],h;

@@ -72,7 +72,7 @@
 					if(!yzmEnable) return false;
 					var that=this;
 					uni.request({
-						url:that.app.apiHost+"?m=register&a=SendSms&ajax=1",
+						url:that.app.zxuHost+"register?m=SendSms&ajax=1",
 						data:{
 							telephone:this.telephone,
 							fromapp:that.app.fromapp()
@@ -93,7 +93,7 @@
 				var that=this;
 				e.detail.value.password2=e.detail.value.password;
 				uni.request({
-					url:that.app.apiHost+"?m=register&a=regsave&ajax=1",
+					url:that.app.zxuHost+"register?m=regsave&ajax=1",
 					method:"POST",
 					header:{
 						"content-type":"application/x-www-form-urlencoded"

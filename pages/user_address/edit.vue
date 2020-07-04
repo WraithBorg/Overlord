@@ -71,7 +71,7 @@
 			getPage: function () {
 				var that = this;
 				uni.request({
-					url: that.app.apiHost + "?m=user_address&a=add&ajax=1&id=" + id,
+					url: that.app.zxuHost + "/user_address/add?ajax=1&id=" + id,
 					data: {
 						authcode: that.app.getAuthCode(),
 						fromapp: that.app.fromapp()
@@ -86,7 +86,7 @@
 			formSubmit: function (e) {
 				var that=this;
 				uni.request({
-					url: that.app.apiHost + "?m=user_address&a=save&ajax=1&fromapp=" + that.app.fromapp() + "&authcode=" + that.app.getAuthCode(),
+					url: that.app.zxuHost + "/user_address/save?ajax=1&fromapp=" + that.app.fromapp() + "&authcode=" + that.app.getAuthCode(),
 					method: "POST",
 					header: {
 						"content-type": "application/x-www-form-urlencoded"

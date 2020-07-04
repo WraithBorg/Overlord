@@ -76,7 +76,7 @@
 			getPage:function(){
 				var that=this;
 				uni.request({
-					url:that.app.apiHost+"?m=user_address&a=my&ajax=1",
+					url:that.app.zxuHost+"user_address/my?ajax=1",
 					data:{
 						fromapp:that.app.fromapp(),
 						authcode:that.app.getAuthCode()
@@ -93,7 +93,7 @@
 				var that=this;
 				if(!isfirst && per_page==0) return false;
 				uni.request({
-					url:that.app.apiHost+"?m=user_address&a=my&ajax=1",
+					url:that.app.zxuHost+"user_address/my?ajax=1",
 					data:{
 						per_page:per_page,
 						fromapp:that.app.fromapp(),
