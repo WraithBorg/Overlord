@@ -315,7 +315,7 @@
 			getPage: function(id) {
 				var that = this;
 				that.app.get({
-					url: that.app.apiHost + "/module.php?m=b2c_product&a=show&ajax=1&id=" + id,
+					url: that.app.zxuHost + "/item/b2c_product/show?ajax=1&id=" + id,
 					data: {
 						 
 						orderid:that.orderid

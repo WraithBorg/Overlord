@@ -40,7 +40,7 @@
 			getPage:function(){
 				var that=this;
 				that.app.get({
-					url:that.app.apiHost+"/module.php?m=b2c_product&a=raty&ajax=1&id="+this.productid,
+					url:that.app.zxuHost+"/b2c_product/raty?ajax=1&id="+this.productid,
 					dataType:"json",
 					success:function(res){
 						that.pageData=res.data;
