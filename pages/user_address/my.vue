@@ -147,7 +147,7 @@
 					}
 				})
 				uni.request({
-					url:that.app.apiHost+"?m=user_address&a=delete&ajax=1&id="+id,
+					url:that.app.zxuHost+"user_address/delete?ajax=1&id="+id,
 					data:{
 						fromapp:that.app.fromapp(),
 						authcode:that.app.getAuthCode()

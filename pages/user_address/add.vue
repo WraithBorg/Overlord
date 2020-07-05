@@ -69,7 +69,7 @@
 			getPage:function(){
 				var that=this;
 				uni.request({
-					url:that.app.apiHost+"?m=user_address&ajax=1&a=add",
+					url:that.app.zxuHost+"user_address/add?ajax=1",
 					data:{
 						authcode: that.app.getAuthCode(),
 						fromapp:that.app.fromapp()
