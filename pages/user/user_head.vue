@@ -27,7 +27,7 @@
 			getPage:function(){
 				var that=this;
 				uni.request({
-					url:that.app.apiHost+"?m=user&a=user_head&ajax=1",
+					url:that.app.zxuHost+"/user/user_head?ajax=1",
 					data:{
 						authcode: that.app.getAuthCode()
 					},
@@ -44,26 +44,28 @@
 					success: (chooseImageRes) => {
 						const tempFilePaths = chooseImageRes.tempFilePaths;
 						uni.uploadFile({
-							url: that.app.apiHost+"?m=upload&a=img&ajax=1&authcode="+that.app.getAuthCode(), //仅为示例，非真实的接口地址
+							url: that.app.zxuHost+"/upload/img/user_head?authcode="+that.app.getAuthCode(), //仅为示例，非真实的接口地址
 							filePath: tempFilePaths[0],
 							name: 'upimg',
 							
 							success: function(res){
 								var data=JSON.parse(res.data);
+								that.user_head= data.data.data.user_head;
+								// var data=JSON.parse(res.data);
 								
-								uni.request({
-									url:that.app.apiHost+"?m=user&a=user_head_save&ajax=1&authcode="+that.app.getAuthCode(),
-									data:{
-										user_head:data.data.imgurl
-									},
-									method:"POST",
-									header:{
-										"content-type":"application/x-www-form-urlencoded"
-									},
-									success:function(res){
-										that.user_head=data.data.trueimgurl;
-									}
-								})
+								// uni.request({
+								// 	url:that.app.zxuHost+"/upload/img/user_head_save?ajax=1&authcode="+that.app.getAuthCode(),
+								// 	data:{
+								// 		user_head:data.data.imgurl
+								// 	},
+								// 	method:"POST",
+								// 	header:{
+								// 		"content-type":"application/x-www-form-urlencoded"
+								// 	},
+								// 	success:function(res){
+								// 		that.user_head=data.data.trueimgurl;
+								// 	}
+								// })
 							}
 						});
 					}
