@@ -400,7 +400,7 @@
 				var that = this;
 				var ksid = that.ksid;
 				uni.request({
-					url: that.app.apiHost + '/module.php?m=b2c_cart&a=add&ajax=1',
+					url: that.app.zxuHost + '/shoppingcart/b2c_cart/add?ajax=1',
 					data: {
 						productid: that.pageData.data.id,
 						amount: that.cart_amount,

@@ -32,7 +32,7 @@
 			getPage:function(){
 				var that=this;
 				uni.request({
-					url:that.app.apiHost+"?m=user&a=info&ajax=1",
+					url:that.app.zxuHost+"/user/info?ajax=1",
 					data:{
 						authcode: that.app.getAuthCode(),
 						fromapp:that.app.fromapp()
@@ -52,7 +52,7 @@
 			submit:function(e){
 				var that=this;
 				uni.request({
-					url:that.app.apiHost+"?m=user&a=save&ajax=1&fromapp="+that.app.fromapp()+"&authcode="+that.app.getAuthCode(),
+					url:that.app.zxuHost+"/user/save?ajax=1&fromapp="+that.app.fromapp()+"&authcode="+that.app.getAuthCode(),
 					method:"POST",
 					header:{
 						"content-type":"application/x-www-form-urlencoded"

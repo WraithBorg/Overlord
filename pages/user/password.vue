@@ -41,7 +41,7 @@
 			getPage:function(){
 				var that=this;
 				uni.request({
-					url:that.app.apiHost+"?m=user&a=password&ajax=1",
+					url:that.app.zxuHost+"/user/password?ajax=1",
 					data:{
 						authcode: that.app.getAuthCode(),
 						fromapp:that.app.fromapp()
@@ -56,7 +56,7 @@
 		 submit:function(e){
 			 var that=this;
 			uni.request({
-				url:that.app.apiHost+"?m=user&a=passwordsave&ajax=1&fromapp="+that.app.fromapp()+"&authcode="+that.app.getAuthCode(),
+				url:that.app.zxuHost+"/user/passwordsave?ajax=1&fromapp="+that.app.fromapp()+"&authcode="+that.app.getAuthCode(),
 				method:"POST",
 				header:{
 					"content-type":"application/x-www-form-urlencoded"

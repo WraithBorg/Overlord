@@ -183,7 +183,7 @@
 				var ksid = ksid == undefined ? 0 : ksid;
 				var amount = 1;
 				uni.request({
-					url: that.app.apiHost+'/module.php?m=b2c_cart&a=add&ajax=1',
+					url: that.app.zxuHost+'/shoppingcart/b2c_cart/add?ajax=1',
 					data: {
 						productid: id,
 						amount: amount,
@@ -221,7 +221,7 @@
 				var ksid = ksid == undefined ? 0 : ksid;
 				amount++;
 				uni.request({
-					url: that.app.apiHost+'/module.php?m=b2c_cart&a=add&ajax=1',
+					url: that.app.zxuHost+'/shoppingcart/b2c_cart/add?ajax=1',
 					data: {
 						productid: id,
 						amount: amount,
@@ -263,7 +263,7 @@
 					isdelete = 1
 				}
 				uni.request({
-					url: that.app.apiHost+'/module.php?m=b2c_cart&a=add&ajax=1',
+					url: that.app.zxuHost+'/shoppingcart/b2c_cart/add?ajax=1',
 					data: {
 						productid: id,
 						amount: amount,
@@ -388,7 +388,7 @@
 				var ksid=that.ksid;
 				var amount = 1;
 				uni.request({
-					url: that.app.apiHost+'/module.php?m=b2c_cart&a=add&ajax=1',
+					url: that.app.zxuHost+'/shoppingcart/b2c_cart/add?ajax=1',
 					data: {
 						productid: id,
 						amount: amount,
@@ -417,7 +417,7 @@
 				var ksid=that.ksid;
 				amount++;
 				uni.request({
-					url: that.app.apiHost+'/module.php?m=b2c_cart&a=add&ajax=1',
+					url: that.app.zxuHost+'/shoppingcart/b2c_cart/add?ajax=1',
 					data: {
 						productid: id,
 						amount: amount,
@@ -450,7 +450,7 @@
 					isdelete = 1
 				}
 				uni.request({
-					url: that.app.apiHost+'/module.php?m=b2c_cart&a=add&ajax=1',
+					url: that.app.zxuHost+'/shoppingcart/b2c_cart/add?ajax=1',
 					data: {
 						productid: id,
 						amount: amount,

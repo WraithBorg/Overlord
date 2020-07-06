@@ -84,7 +84,7 @@
 			getPage: function() {
 				var that = this;
 				uni.request({
-					url: that.app.apiHost+"/module.php?m=b2c_cart&ajax=1",
+					url: that.app.zxuHost+"/shoppingcart/b2c_cart/list?ajax=1",
 					data:{
 						authcode:that.app.getAuthCode()
 					},
@@ -108,7 +108,7 @@
 				var ksid = ksid == undefined ? 0 : ksid;
 				amount++;
 				uni.request({
-					url: that.app.apiHost+'/module.php?m=b2c_cart&a=add&ajax=1',
+					url: that.app.zxuHost+'/shoppingcart/b2c_cart/add?ajax=1',
 					data: {
 						productid: productid,
 						amount: amount,
@@ -134,7 +134,7 @@
 					isdelete = 1
 				}
 				uni.request({
-					url: that.app.apiHost+'/module.php?m=b2c_cart&a=add&ajax=1',
+					url: that.app.zxuHost+'/shoppingcart/b2c_cart/add?ajax=1',
 					data: {
 						productid: productid,
 						amount: amount,

@@ -120,7 +120,7 @@
 			formSubmit:function(e){
 				var that=this;
 				uni.request({
-					url:that.app.apiHost+"?m=login&a=loginsave&ajax=1",
+					url:that.app.zxuHost+"/login/loginsave?ajax=1",
 					method:"POST",
 					header:{
 						"content-type":"application/x-www-form-urlencoded"

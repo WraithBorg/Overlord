@@ -132,7 +132,7 @@
 			getPage: function () {
 				var that = this;
 				uni.request({
-					url: that.app.apiHost + "/module.php?m=b2c_user&ajax=1",
+					url: that.app.zxuHost + "/module/b2c_user?ajax=1",
 					data: {
 						authcode: that.app.getAuthCode()
 					},
