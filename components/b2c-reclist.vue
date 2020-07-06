@@ -55,7 +55,7 @@
 			},
 			getPage:function(){
 				that.app.get({
-					url:that.app.apiHost+"/module.php?m=b2c_product&a=reclist&ajax=1",
+					url:that.app.zxuHost+"/item/b2c_product/reclist?ajax=1",
 					data:{
 						productid:this.productid
 					},
