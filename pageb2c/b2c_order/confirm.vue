@@ -137,7 +137,7 @@
 				this.pageData.user_address_id=e.detail.value;
 				var that=this;
 				that.app.get({
-					url:that.app.apiHost+"/module.php?m=b2c_order&a=confirm&ajax=1",
+					url:that.app.zxuHost+"/b2c_order/confirm?ajax=1",
 					data:{						
 						cartid:that.cartid,
 						user_address_id:this.pageData.user_address_id
@@ -153,7 +153,7 @@
 			getPage:function(){
 				var that=this;
 				that.app.get({
-					url:that.app.apiHost+"/module.php?m=b2c_order&a=confirm&ajax=1",
+					url:that.app.zxuHost+"/b2c_order/confirm?ajax=1",
 					data:{
 						ispin:that.ispin, 
 						cartid:that.cartid,
@@ -173,7 +173,7 @@
 				var that=this;
 				e.detail.value.backurl=that.app.appRoot+"#/pages/b2c_order/success";
 				uni.request({
-					url:that.app.apiHost+"/module.php?m=b2c_order&a=order&ajax=1&authcode="+that.app.getAuthCode(),
+					url:that.app.zxuHost+"/b2c_order/createorder?ajax=1&authcode="+that.app.getAuthCode(),
 					data:e.detail.value,
 					method:"POST",
 					header:{

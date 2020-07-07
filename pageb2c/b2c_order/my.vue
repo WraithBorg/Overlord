@@ -80,7 +80,7 @@
 			getPage:function(){
 				var that=this;
 				uni.request({
-					url:that.app.apiHost+"/module.php?m=b2c_order&a=my&ajax=1",
+					url:that.app.zxuHost+"/b2c_order/myorder?ajax=1",
 					data:{
 						type:that.type,
 						authcode:that.app.getAuthCode()
