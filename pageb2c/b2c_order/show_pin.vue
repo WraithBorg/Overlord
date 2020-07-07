@@ -120,7 +120,7 @@
 			getPage:function(){
 				var that=this;
 				uni.request({
-					url:that.app.apiHost+"/module.php?m=b2c_order&a=show&ajax=1&orderid="+this.orderid,
+					url:that.app.zxuHost+"/b2c_order/showdetails?ajax=1&orderid="+this.orderid,
 					data:{
 						authcode:that.app.getAuthCode()
 					},
@@ -134,7 +134,7 @@
 			cancel:function(){
 				var that=this;
 				uni.request({
-					url:that.app.apiHost+"/module.php?m=b2c_order&a=cancel&ajax=1&orderid="+this.orderid,
+					url:that.app.zxuHost+"/b2c_order/cancelOrder?ajax=1&orderid="+this.orderid,
 					data:{
 						authcode:that.app.getAuthCode()
 					},
