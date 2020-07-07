@@ -54,7 +54,7 @@
 			getPage:function(){
 				var that=this;
 				this.app.get({
-					url:this.app.apiHost+"/index.php?m=kefu&a=data&ajax=1",
+					url:this.app.zxuHost+"/kefu/mykefu?ajax=1",
 					
 					dataType:"json",
 					success:function(res){
@@ -68,7 +68,7 @@
 				var that=this;
 				if(this.content=="") return false;
 				that.app.post({
-					url:that.app.apiHost+"/index.php?m=kefu&a=save&ajax=1",
+					url:that.app.zxuHost+"/kefu/savelog?ajax=1",
 					data:{
 						content:this.content
 					},

@@ -56,7 +56,7 @@
 			getPage: function() {
 				var that = this;
 				uni.request({
-					url: app.apiHost + "?m=recharge&a=my&ajax=1",
+					url: app.zxuHost + "/recharge/myrecharge?ajax=1",
 					data: {
 						authcode: app.getAuthCode()
 					},
@@ -73,7 +73,7 @@
 				var that = this;
 				if (!isfirst && per_page == 0) return false;
 				uni.request({
-					url: app.apiHost + "?m=recharge&a=my&ajax=1",
+					url: app.zxuHost + "/recharge/myrecharge?ajax=1",
 					data: {
 						per_page: per_page,
 						catid: catid,

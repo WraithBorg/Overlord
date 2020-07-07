@@ -54,7 +54,7 @@
 			getPage:function(){
 				var that=this;
 				uni.request({
-					url:app.apiHost+"?m=pay_log&a=my&ajax=1",
+					url:app.zxuHost+"/paylog/mypaylog?ajax=1",
 					data:{
 						authcode:app.getAuthCode()
 					},
@@ -71,7 +71,7 @@
 				var that=this;
 				if(!isfirst && per_page==0) return false;
 				uni.request({
-					url:app.apiHost+"?m=pay_log&a=my&ajax=1",data:{
+					url:app.zxuHost+"/paylog/mypaylog?ajax=1",data:{
 						per_page:per_page,
 						catid:catid,
 						authcode:app.getAuthCode()

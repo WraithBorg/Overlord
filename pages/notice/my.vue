@@ -57,7 +57,7 @@
 			getPage: function () {
 				var that = this;
 				uni.request({
-					url: app.apiHost + "?fromapp=wxapp&m=notice&a=my&ajax=1",
+					url: app.zxuHost + "/notice/mynotice?ajax=1",
 					data: {
 						authcode: app.getAuthCode()
 					},

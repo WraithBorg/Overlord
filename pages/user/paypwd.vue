@@ -35,7 +35,7 @@
 			getPage:function(){
 				var that=this;
 				uni.request({
-					url:this.app.apiHost+"?m=user&a=paypwd&ajax=1",
+					url:this.app.zxuHost+"/user/paypwd?ajax=1",
 					data:{
 						authcode: this.app.getAuthCode()
 					},
@@ -49,7 +49,7 @@
 			 submit:function(e){
 				var that=this;
 				uni.request({
-					url:this.app.apiHost+"?m=user&a=paypwdsave&ajax=1&fromapp="+this.app.fromapp()+"&authcode="+this.app.getAuthCode(),
+					url:this.app.zxuHost+"/user/savepaypwd?ajax=1&fromapp="+this.app.fromapp()+"&authcode="+this.app.getAuthCode(),
 					method:"POST",
 					header:{
 						"content-type":"application/x-www-form-urlencoded"
