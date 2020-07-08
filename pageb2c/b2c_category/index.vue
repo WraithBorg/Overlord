@@ -70,7 +70,7 @@
 			getPage: function() {
 				var that = this;
 				that.app.get({
-					url: that.app.zxuHost + "/category/b2c_category?ajax=1",
+					url: that.app.zxuHost + "/category/b2c_category_tree?ajax=1",
 					success: function(res) {
 						that.pageData = res.data;
 						for(var i in res.data.catList){
