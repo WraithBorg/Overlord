@@ -40,7 +40,7 @@
 
 				<view v-for="(item,index) in pageData.bmList" :key="index" @click="goProduct(item.id)" class="mtlist-item">
 					<view class="mtlist-item-bd">
-						<image mode="widthFix" class="mtlist-img " :src="item.imgurl+'.small.jpg'"></image>
+						<image mode="widthFix" class="mtlist-img " :src="item.imgurl"></image>
 						<view class="mtlist-item-pd">
 							<view class="mtlist-item-money">
 								<view class="mtlist-item-money-flex">￥
@@ -68,7 +68,7 @@
 
 				<view v-for="(item,index) in pageData.recList" :key="index" @click="goProduct(item.id)" class="mtlist-item">
 					<view class="mtlist-item-bd">
-						<image mode="widthFix" class="mtlist-img " :src="item.imgurl+'.small.jpg'"></image>
+						<image mode="widthFix" class="mtlist-img " :src="item.imgurl"></image>
 						<view class="mtlist-item-pd">
 							<view class="mtlist-item-money">
 								<view class="mtlist-item-money-flex">￥
@@ -96,7 +96,7 @@
 
 				<view v-for="(item,index) in pageData.hotList" :key="index" @click="goProduct(item.id)" class="mtlist-item">
 					<view class="mtlist-item-bd">
-						<image mode="widthFix" class="mtlist-img " :src="item.imgurl+'.small.jpg'"></image>
+						<image mode="widthFix" class="mtlist-img " :src="item.imgurl"></image>
 						<view class="mtlist-item-pd">
 							<view class="mtlist-item-money">
 								<view class="mtlist-item-money-flex">￥

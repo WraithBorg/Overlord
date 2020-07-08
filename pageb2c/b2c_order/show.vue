@@ -11,7 +11,7 @@
 				<view v-for="(item,index) in pageData.prolist" :key="index" class="flexlist-item mgb-0">
 		
 					<view  class="flexlist-imgbox">
-						<image :src="item.imgurl+'.100x100.jpg'" class="flexlist-img"></image>
+						<image :src="item.imgurl" class="flexlist-img"></image>
 					</view>
 		
 					<view class="flex-1">
@@ -179,6 +179,7 @@
 				})
 			},
 			pay:function(){
+        debugger;
 				uni.navigateTo({
 					url:"../b2c_order/pay?orderid="+this.orderid
 				})

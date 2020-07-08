@@ -1,7 +1,7 @@
 <template>
 	<view class="bg-white pd-5">
 		<view @click="goShop(item.shopid)" v-for="(item,index) in shoplist" :key="index" class="shopItem">
-			<image :src="item.imgurl+'.100x100.jpg'" mode="widthFix" class="shopItem-img"></image>
+			<image :src="item.imgurl" mode="widthFix" class="shopItem-img"></image>
 			<view class="flex-1">
 				<view class="shopItem-title">{{item.title}}</view>
 				<view class="flex">

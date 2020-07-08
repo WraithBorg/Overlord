@@ -5,7 +5,7 @@
 			<view class="main-body">
 				<view class="uhead">
 
-					<image @click="gourl('../user/user_head')" class="uhead-img" :src="pageData.data.user_head+'.100x100.jpg'"></image>
+					<image @click="gourl('../user/user_head')" class="uhead-img" :src="pageData.data.user_head"></image>
 
 					<view class="uhead-box">
 						<view class="uhead-nick">{{pageData.data.nickname}}</view>
@@ -108,7 +108,7 @@
 					url: url,
 				})
 			},
-			getPage: function () {
+			getPage: function () {debugger
 				var that = this;
 				uni.request({
 					url: that.app.apiHost + "?m=user&ajax=1",

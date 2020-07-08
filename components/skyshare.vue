@@ -43,7 +43,7 @@
 		created:function(){
 			var that=this;
 			if(this.imgurl!='' && this.imgurl!=undefined){
-				this.shareImg=this.imgurl+".100x100.jpg";
+				this.shareImg=this.imgurl;
 			}else{
 				this.shareImg=this.app.apiHost+"/static/logo.jpg";
 			}

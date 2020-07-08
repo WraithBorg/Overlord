@@ -21,7 +21,7 @@
 		<view class="row-box">
 		 
 			<view class="flexlist-item" v-for="(item,index) in  proList" :key="index">
-				<img class="flexlist-img" :src="item.imgurl+'.100x100.jpg'" />
+				<img class="flexlist-img" :src="item.imgurl" />
 				<view class="flex-1">
 					<view class="flexlist-title">{{item.title}}</view>
 					<input class="none" type="text" :name="'ratyPros['+item.id+']'" :value="item.raty_grade"/> 

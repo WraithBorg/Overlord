@@ -11,7 +11,7 @@
 				<view class="mtlist" v-else>
 					<view class="mtlist-item"  @click="goProduct(item.shopid,item.id)" v-for="(item,index) in pageData.list" :key="index">
 						<view class="mtlist-item-bd">
-							<image mode="widthFix" class="mtlist-img" :src="item.imgurl+'.small.jpg'"></image>
+							<image mode="widthFix" class="mtlist-img" :src="item.imgurl"></image>
 							<view class="mtlist-item-pd">
 								<view class="mtlist-item-money">
 									<view class="flex flex-1 flex-ai-center">

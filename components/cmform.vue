@@ -4,7 +4,7 @@
 		<view v-else id="comment-list" class="comment-list">
 			
 			<view class="comment-item" v-for="(item,key) in cmData.list" :key="key">
-				<image class="comment-item-head" :src="item.user_head+'.100x100.jpg'"></image>
+				<image class="comment-item-head" :src="item.user_head"></image>
 				<view class="flex-1">
 					<view class="comment-item-nick">
 						{{item.nickname}}

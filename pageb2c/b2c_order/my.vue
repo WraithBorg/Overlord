@@ -16,7 +16,7 @@
 					<view class="cl-primary">{{item.status_name}}</view>
 				</view>
 				<view class="flexlist-item" v-for="(pro,proIndex) in item.prolist" :key="proIndex">
-					<img class="flexlist-img" :src="pro.imgurl+'.100x100.jpg'">
+					<img class="flexlist-img" :src="pro.imgurl">
 					<view class="flex-1">
 						<view class="flexlist-title">{{pro.title}}</view>
 						<view class="flexlist-ks">{{pro.ks_title}}</view>
@@ -107,6 +107,7 @@
 				this.getPage();
 			},
 			pay:function(orderid){
+        debugger;
 				uni.navigateTo({
 					url:"../b2c_order/pay?orderid="+orderid
 				})

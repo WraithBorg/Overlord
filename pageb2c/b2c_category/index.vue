@@ -19,7 +19,7 @@
 						<view class="list-child">
 
 							<view v-for="(cc,ccIndex) in item.child" :key="ccIndex" @click="goList(cc.catid)" class="list-child-item">
-								<image class="list-child-img" mode="widthFix" :src="cc.imgurl+'.100x100.jpg'"></image>
+								<image class="list-child-img" mode="widthFix" :src="cc.imgurl"></image>
 								<view class="list-child-title">{{cc.title}}</view>
 							</view>
 						</view>

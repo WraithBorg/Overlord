@@ -12,7 +12,7 @@
 		<view v-else>
 			<view class="uhead">
 			
-				<image @click="gourl('../../pages/user/user_head')" class="uhead-img" :src="pageData.data.user_head+'.100x100.jpg'"></image>
+				<image @click="gourl('../../pages/user/user_head')" class="uhead-img" :src="pageData.data.user_head"></image>
 			
 				<view class="uhead-box">
 					<view class="uhead-nick">{{pageData.data.nickname}}</view>

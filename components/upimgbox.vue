@@ -5,7 +5,7 @@
 				<input type="text" maxlength="-1"  name="imgsdata" :value="imgsData" />
 			</view>
 			<view class="upimg-item" v-for="(img,imgIndex) in imgsList" :key="imgIndex">
-				<image class="upimg-img" :src="img.trueimgurl+'.100x100.jpg'"></image>
+				<image class="upimg-img" :src="img.trueimgurl"></image>
 				<view class="upimg-del" @click="delImg(imgIndex)"></view>
 			</view>
 			

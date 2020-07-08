@@ -64,10 +64,10 @@
 					url:url,
 				})
 			},
-			loginOut:function(){
+			loginOut:function(){debugger
 				var that=this; 
 				uni.request({
-					url:that.app.apiHost+"?m=login&a=logout&ajax=1",
+					url:that.app.zxuHost+"login/logout?ajax=1",
 					data:{
 						"authcode":that.app.getAuthCode(),
 						"fromapp":that.app.fromapp()

@@ -10,7 +10,7 @@
 				<view class="flexlist">
 					<view @click="goArticle(item.id)" class="flexlist-item pdb-10"  v-for="(item,index) in pageData.list" :key="index">
 					 
-							<image class="flexlist-img" :src="item.imgurl+'.100x100.jpg'"></image>
+							<image class="flexlist-img" :src="item.imgurl"></image>
 							<view class="flex-1">
 								<view class="flexlist-title f16">{{item.title}}</view>
 								<view class="flexlist-desc cor2 f14">{{item.description}}</view>

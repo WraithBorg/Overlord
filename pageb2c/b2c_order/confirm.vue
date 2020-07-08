@@ -39,7 +39,7 @@
 				 
 				<view class="flexlist-item" v-for="(item,index) in pageData.cartList" :key="index">
 					<input type="hidden" class="none" :name="'cartid['+index+']'" :value="item.id" />
-					<img :src="item.imgurl+'.100x100.jpg'" class="flexlist-img" />
+					<img :src="item.imgurl" class="flexlist-img" />
 					<view class="flex-1">
 						<view class="flexlist-title">{{item.title}}</view>
 						<view class="mgb-5 cl2">{{item.ks_title}}</view>

@@ -4,7 +4,7 @@
 			
 			<div class="bd-mp-5" v-for="(item,index) in pageData.list" :key="index" >
 				<div class="flex mgb-5 flex-ai-center">
-					<img :src="item.user_head+'.100x100.jpg'" class="wh-30 mgr-5" />
+					<img :src="item.user_head" class="wh-30 mgr-5" />
 					<div class="flex-1">
 						<div class="flex-1 f12 cl3">{{item.nickname}}</div>
 						<sky-raty readonly="true" len="10" :grade="item.raty_grade"></sky-raty>

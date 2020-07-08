@@ -4,7 +4,7 @@
 			 
 			<view @click="goProduct(item.id)" class="mtlist-item"  v-for="(item,index) in list" :key="index">
 				<view class="mtlist-item-bd">
-					<image class="mtlist-img" mode="widthFix" :src="item.imgurl+'.small.jpg'"></image>
+					<image class="mtlist-img" mode="widthFix" :src="item.imgurl"></image>
 					<view class="mtlist-item-pd">
 						<view class="flex flex-ai-center mgb-5">
 							<text class="cl-money f14">￥</text>

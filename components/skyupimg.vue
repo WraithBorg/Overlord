@@ -2,7 +2,7 @@
 	<view>
 		<view class="upimg-box bg-fff">
 			<view @click="upload()" :class="{'none':dimgurl==''}" class="upimg-item">
-				<img class="upimg-img" v-if="dimgurl!=''" :src="dtrueimgurl+'.100x100.jpg'">
+				<img class="upimg-img" v-if="dimgurl!=''" :src="dtrueimgurl">
 			</view>
 			 
 			<view @click="upload()" v-if="dimgurl==''" class="upimg-btn">

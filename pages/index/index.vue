@@ -7,7 +7,7 @@
 			<view class="pd-5">
 				<view class="flex">
 					<image :src="pageData.site.logo" mode="widthFix" class="wh-30 mgr-5"></image>
-					<input placeholder="老白茶、2008银针" v-model="keyword" type="text" class="header-search pdl-5">
+					<input placeholder="红楼梦、西游记" v-model="keyword" type="text" class="header-search pdl-5">
 					<view @click="search" class="header-search-btn  iconfont icon-search"></view>
 				</view>
 			</view>
@@ -40,7 +40,7 @@
 
 				<view v-for="(item,index) in pageData.bmList" :key="index" @click="goProduct(item.id)" class="mtlist-item">
 					<view class="mtlist-item-bd">
-						<image mode="widthFix" class="mtlist-img " :src="item.imgurl+'.small.jpg'"></image>
+						<image mode="widthFix" class="mtlist-img " :src="item.imgurl"></image>
 						<view class="mtlist-item-pd">
 							<view class="mtlist-item-money">
 								<view class="mtlist-item-money-flex">￥
@@ -68,7 +68,7 @@
 
 				<view v-for="(item,index) in pageData.recList" :key="index" @click="goProduct(item.id)" class="mtlist-item">
 					<view class="mtlist-item-bd">
-						<image mode="widthFix" class="mtlist-img " :src="item.imgurl+'.small.jpg'"></image>
+						<image mode="widthFix" class="mtlist-img " :src="item.imgurl"></image>
 						<view class="mtlist-item-pd">
 							<view class="mtlist-item-money">
 								<view class="mtlist-item-money-flex">￥
@@ -96,7 +96,7 @@
 
 				<view v-for="(item,index) in pageData.hotList" :key="index" @click="goProduct(item.id)" class="mtlist-item">
 					<view class="mtlist-item-bd">
-						<image mode="widthFix" class="mtlist-img " :src="item.imgurl+'.small.jpg'"></image>
+						<image mode="widthFix" class="mtlist-img " :src="item.imgurl"></image>
 						<view class="mtlist-item-pd">
 							<view class="mtlist-item-money">
 								<view class="mtlist-item-money-flex">￥

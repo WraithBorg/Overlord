@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view v-if="muser" class="d-userbox">
-			<image class="d-userbox-head" :src="muser.user_head+'.100x100.jpg'"></image>
+			<image class="d-userbox-head" :src="muser.user_head"></image>
 			<view class="flex-1">
 				<view class="d-userbox-nick">{{muser.nickname}}</view>
 				<view class="d-userbox-follows flex-ai-center">

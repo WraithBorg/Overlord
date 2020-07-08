@@ -85,7 +85,7 @@
 			 
 					<block v-for="($c,i) in pageData.pts" :key="i">
 					<view class="pdList-item">
-						<img :src="$c.user_head+'.100x100.jpg'" class="pdList-img" />
+						<img :src="$c.user_head" class="pdList-img" />
 						<view class="pdList-nick">{{$c.nickname}}</view>
 						<view class="mgr-5">
 							<view class="f12 flex">还差<view class="cl-num">{{$c.need_num}}</view>人拼成</view>
@@ -151,7 +151,7 @@
 				<view class="ppBox ani-bottom">
 					<view id="ppBox-close" @click="ppBoxClass=''" class="ppBox-close iconfont icon-close"></view>
 					<view class="flex flex-jc-center mgb-10">
-						<img class="wh-80 mgr-10" :src="pageData.data.imgurl+'.100x100.jpg'" />
+						<img class="wh-80 mgr-10" :src="pageData.data.imgurl" />
 						<view class="flex-1 flex-jc-center">
 							<view class="cl-money mgb-5">￥{{price}}</view>
 							<view class="f12 cl2 mgb-5">库存{{pageData.data.total_num}}件</view>
