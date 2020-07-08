@@ -436,7 +436,7 @@
 			favToggle: function(id) {
 				var that = this;
 				that.app.get({
-					url: that.app.zxuHost + "/itemfav/toggle?ajax=1",
+					url: that.app.zxuHost + "/item/itemfav?ajax=1",
 					data: {
 						objectid: that.pageData.data.id,
 						authcode: that.app.getAuthCode(),
