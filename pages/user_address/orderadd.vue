@@ -28,7 +28,7 @@
 		},
 		 
 		methods:{
-			getPage:function(){
+			getPage:function(){debugger
 				var that=this;
 				uni.request({
 					url:app.apiHost+"?m=article",

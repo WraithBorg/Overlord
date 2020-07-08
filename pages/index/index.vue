@@ -7,7 +7,7 @@
 			<view class="pd-5">
 				<view class="flex">
 					<image :src="pageData.site.logo" mode="widthFix" class="wh-30 mgr-5"></image>
-					<input placeholder="老白茶、2008银针" v-model="keyword" type="text" class="header-search pdl-5">
+					<input placeholder="红楼梦、西游记" v-model="keyword" type="text" class="header-search pdl-5">
 					<view @click="search" class="header-search-btn  iconfont icon-search"></view>
 				</view>
 			</view>
@@ -184,7 +184,7 @@
 					url: "../../pageb2c/b2c_product/show?id=" + id
 				})
 			},
-			getPage: function() {
+			getPage: function() {debugger
 				var that = this;
 				that.app.get({
 					url: this.app.zxuHost + "/b2c/indexpage?ajax=1",

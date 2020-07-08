@@ -108,7 +108,7 @@
 					url: url,
 				})
 			},
-			getPage: function () {
+			getPage: function () {debugger
 				var that = this;
 				uni.request({
 					url: that.app.apiHost + "?m=user&ajax=1",
