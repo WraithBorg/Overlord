@@ -131,7 +131,7 @@
 					},
 					success:function(res){
 						var data=res.data;
-						if(res.data.error){
+						if(res.data.type === 'ERROR'){
 							uni.showToast({
 								"title":res.data.message
 							})

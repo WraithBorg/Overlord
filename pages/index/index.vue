@@ -187,7 +187,7 @@
 			getPage: function() {
 				var that = this;
 				that.app.get({
-					url: this.app.apiHost + "/module.php?m=b2c&ajax=1",
+					url: this.app.zxuHost + "/b2c/indexpage?ajax=1",
 					success: function(res) {
 						that.pageData = res.data;
 						that.pageLoad = true;

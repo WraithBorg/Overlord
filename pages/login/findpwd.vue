@@ -62,7 +62,7 @@
 					if(!yzmEnable) return false;
 					var that=this;
 					uni.request({
-						url:that.app.apiHost+"?m=login&a=SendSms&ajax=1",
+						url:that.app.zxuHost+"/login/sendsms?ajax=1",
 						data:{
 							telephone:this.telephone,
 							fromapp:that.app.fromapp()
@@ -82,7 +82,7 @@
 			formSubmit:function(e){
 				var that=this;
 				uni.request({
-					url:that.app.apiHost+"?m=login&a=findpwdSave&ajax=1",
+					url:that.app.zxuHost+"/login/findpwdSave?ajax=1",
 					method:"POST",
 					header:{
 						"content-type":"application/x-www-form-urlencoded"
@@ -94,12 +94,10 @@
 							"title":res.data.message
 						})
 						if(!res.data.error){
-							
+							debugger
 							setTimeout(function(){
 								uni.navigateBack();
 							},1000);
-							 
-							
 						}
 						
 					}
