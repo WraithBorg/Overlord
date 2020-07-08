@@ -22,10 +22,10 @@
 			getPage:function(){
 				var that=this;
 				that.app.get({
-					url:that.app.zxuHost+"/html/aboutus?ajax=1",
+					url:that.app.zxuHost+"/trifles/aboutus?ajax=1",
 					success:function(res){
-						that.data=res.data.data;
-						console.log(res.data.data.content)
+						that.data=res.data;
+						console.log(res.data.content)
 					}
 				})
 			}
