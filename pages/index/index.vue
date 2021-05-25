@@ -184,7 +184,7 @@
 					url: "../../pageb2c/b2c_product/show?id=" + id
 				})
 			},
-			getPage: function() {
+			getPage: function() {debugger
 				var that = this;
 				that.app.get({
 					url: this.app.zxuHost + "/b2c/indexpage?ajax=1",
