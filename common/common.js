@@ -1,6 +1,6 @@
 
 module.exports = {
-	apiHost:"#######https://kfbc.deitui.com/",
+	apiHost:"https://kfbc.deitui.com/",
 	zxuHost:"http://127.0.0.1:8888/star/",
 	appRoot:"https://kfbc.deitui.com/uniapp/h5/",
 	parseUrl:function(url){
