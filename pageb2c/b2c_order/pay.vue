@@ -31,18 +31,21 @@
 			pay:function(){
 				var that=this;
 				uni.request({
-					url:that.app.apiHost+"/module.php?m=b2c_order&a=pay&ajax=1",
+					url:that.app.apiHost+"/b2c_order/payOrder",
 					data:{
 						orderid:that.orderid,
 						authcode:that.app.getAuthCode(),
 						backurl:that.app.appRoot+"#/pages/b2c_order/success"
 					},
 					success:function(rs){
-						dtPay.paytype=that.paytype;
-						dtPay.pay({
-							payurl:rs.data.data.payurl,
-							orderno:rs.data.data.orderno
-						});
+						that.pageData=rs.data.data;
+						that.pageLoad=true;
+						// 以前支付代码 zxu
+						// dtPay.paytype=that.paytype;
+						// dtPay.pay({
+						// 	payurl:rs.data.data.payurl,
+						// 	orderno:rs.data.data.orderno
+						// });
 					}
 				})
 				

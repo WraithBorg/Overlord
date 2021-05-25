@@ -35,11 +35,11 @@
 					 
 				</view>
 				<view v-if="item.status==0" class="flex flex-jc-end">
-					
-					<view v-if="item.ispay==0" @click="pay(item.orderid)" class="btn-small btn-outline-danger mgr-10">去支付</view>
+					<!-- 屏蔽拼团 -->
+					<!-- <view v-if="item.ispay==0" @click="pay(item.orderid)" class="btn-small btn-outline-danger mgr-10">去支付</view>
 					<block v-else-if="item.ispin==1">
 						<view class="btn-small btn-outline-success mgr-5" @click="goPin(item.orderid)" v-if="item.pin_success==0">邀请拼团</view>
-					</block>
+					</block> -->
 					
 					<view class="btn-small  btn-outline-danger" @click="goOrder(item.orderid)">查看详情</view>
 				</view>

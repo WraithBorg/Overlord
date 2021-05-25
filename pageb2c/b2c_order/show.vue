@@ -143,7 +143,6 @@
 						authcode:that.app.getAuthCode()
 					},
 					success:function(res){
-					 
 						that.pageData=res.data.data;
 						that.pageLoad=true;
 					}
@@ -179,10 +178,31 @@
 				})
 			},
 			pay:function(){
-        debugger;
-				uni.navigateTo({
-					url:"../b2c_order/pay?orderid="+this.orderid
+				var that=this;
+				uni.request({
+					url:that.app.apiHost+"/b2c_order/payOrder",
+					data:{
+						orderid:that.orderid,
+						authcode:that.app.getAuthCode(),
+						backurl:that.app.appRoot+"#/pages/b2c_order/success"
+					},
+					success:function(rs){
+						that.pageData=rs.data.data;
+						that.pageLoad=true;
+						that.getPage();
+						// 以前支付代码 zxu
+						// dtPay.paytype=that.paytype;
+						// dtPay.pay({
+						// 	payurl:rs.data.data.payurl,
+						// 	orderno:rs.data.data.orderno
+						// });
+					}
 				})
+				
+				// 支付页面暂不跳转 zxu
+				// uni.navigateTo({
+				// 	url:"../b2c_order/pay?orderid="+this.orderid
+				// })
 			}
 		}
 	}

@@ -1,7 +1,7 @@
 module.exports={
-	apiHost:"https://kfbc.deitui.com/",
+	apiHost:"http://127.0.0.1:8888/star/",
 	zxuHost:"http://127.0.0.1:8888/star/",
-	appRoot:"https://kfbc.deitui.com/uniapp/h5/", 
+	appRoot:"http://127.0.0.1:8888/star/",
 	urlSuccess:"../b2c_order/success",
 	urlFail:"../b2c_order/fail",
 	paytype:"alipay",
